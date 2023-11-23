@@ -10,9 +10,9 @@ const Studentdata = () => {
   return (
     <DataTable style={styles.container}>
       <DataTable.Header style={styles.tableHeader}>
-        <DataTable.Title>ID</DataTable.Title>
-        <DataTable.Title>NAME</DataTable.Title>
-        <DataTable.Title>COURSE</DataTable.Title>
+        <DataTable.Title style={styles.columnHeader}>ID</DataTable.Title>
+        <DataTable.Title style={styles.columnHeader}>NAME</DataTable.Title>
+        <DataTable.Title style={styles.columnHeader}>COURSE</DataTable.Title>
       </DataTable.Header>
 
       <FlatList
@@ -40,4 +40,8 @@ const styles = StyleSheet.create({
   tableHeader: {
     backgroundColor: "blue",
   },
+  columnHeader: {
+    color: "black",
+    fontWeight: 'bold', 
+  }
 });

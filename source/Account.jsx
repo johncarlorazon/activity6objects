@@ -8,10 +8,10 @@ const Account = () => {
   return (
     <DataTable style={styles.container}>
       <DataTable.Header style={styles.tableHeader}>
-        <DataTable.Title>ID</DataTable.Title>
-        <DataTable.Title>USERNAME</DataTable.Title>
-        <DataTable.Title>PASSWORD</DataTable.Title>
-        <DataTable.Title>USERTYPE</DataTable.Title>
+        <DataTable.Title style={styles.columnHeader}>ID</DataTable.Title>
+        <DataTable.Title style={styles.columnHeader}>USERNAME</DataTable.Title>
+        <DataTable.Title style={styles.columnHeader}>PASSWORD</DataTable.Title>
+        <DataTable.Title style={styles.columnHeader}>USERTYPE</DataTable.Title>
       </DataTable.Header>
 
       {User.map((Users) => (
@@ -35,4 +35,8 @@ const styles = StyleSheet.create({
   tableHeader: {
     backgroundColor: 'blue',
   },
+  columnHeader: {
+    color: "black",
+    fontWeight: 'bold', 
+  }
 });

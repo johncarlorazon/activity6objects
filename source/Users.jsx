@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     
   },
   columnHeader: {
-    color: "blue",
+    color: "black",
     fontWeight: 'bold', 
 },
 });
